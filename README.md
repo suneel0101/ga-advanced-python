@@ -1,6 +1,7 @@
 # Class Info
 - teacher: Suneel Chakravorty, twitter: @suneelius
 - class chatroom: http://us19.chatzy.com/72537354013765
+- wifi: GA guest, password: yellowpencil
 
 # Python Warm Up and Diagnostic
 ## Objectives
@@ -10,7 +11,7 @@
 2. Write a function that returns a list of the numbers between 1 and 10,000 that are divisible by 3.
 3. The same as 2, but use Python list comprehensions
 4. Write a function `get_max` that takes a list of numbers and returns the max of those numbers, don't use the builtin `max()` function. Afterward,  try using `max()`
-5. Write a function `is_odd_or_div_by_7` that returns True if a number is odd or divisble by 7 and False otherwise.
+5. Write a function `is_odd_or_div_by_7` that returns True if a number is odd or divisble by 7 and False otherwise. Then write it using a `lambda` function.
 6. Use `is_odd_or_div_by_7` and list comprehensions to write a function `get_sublist_of_numbers_odd_or_div_by_7` that takes in a list and returns a sublist of those numbers that are either odd or divisible by 7.
 7. Given a list of food orders, e.g. ```["burger", "fries", "burger", "tenders", "apple pie"]```, write a function `get_aggregate_order_counts` that takes the list and returns a dictionary with the different dishes as keys and the number of times they appear in the list as the values. For example, it takes ```["burger", "fries", "burger", "tenders", "apple pie"]``` and outputs ```
 {
