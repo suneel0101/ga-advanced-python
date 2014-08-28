@@ -358,7 +358,7 @@ Who are the 10 most prolific artists?
 >>> rock_data['ARTIST CLEAN'].values_counts().head()
 ```
 
-3 - How many songs contain the word 'Rock'/'rock'/'ROCK' in it?
+How many songs contain the word 'Rock'/'rock'/'ROCK' (and any other upper/lower case combination) in it?
 
 ```python
 # I can create a new column in the DataFrame the same way we add keys to dictionaries
@@ -371,7 +371,7 @@ Who are the 10 most prolific artists?
 >>> rock_data[rock_data["has rock in title"]]
 ```
 
-4 - What is the earliest release year in the data?
+What is the earliest release year in the data?
 
 We need to clean the data. Let's use apply. Let's change any nonstring or below 1900 to None, same as we did above.
 
@@ -394,7 +394,7 @@ We need to clean the data. Let's use apply. Let's change any nonstring or below 
 1955
 ```
 
-5 - Plot year against number of songs released in that year
+Plot year against number of songs released in that year
 ```python
 # to do this, make sure you started the shell with ipython -pylab
 >>> series = rock_data['Release Year Clean'].value_counts()
