@@ -37,6 +37,7 @@ Hello, world!
 ## Python Exercises
 
 1 - Write a function that prints all the even numbers between 1 and 10,000.
+
 Solution:
 ```python
 def print_even_numbers():
@@ -47,6 +48,7 @@ def print_even_numbers():
 This reviewed FOR LOOPS, IF CONDITIONS, and PRINTING
 
 2 - Write a function that returns a list of the numbers between 1 and 10,000 that are divisible by 3.
+
 Solution:
 ```python
 This reviews basic use of LISTS
@@ -60,6 +62,7 @@ def divisible_by_3():
 Note: we use `xrange` instead of `range` because `range` loads the entire list into memory, while `xrange` just creates an iterator: https://mail.python.org/pipermail/python-list/2012-November/634509.html. If you have a really big list, `xrange` is way faster.
 
 3 - The same as #2, but use Python list comprehensions.
+
 Solution:
 ```python
 def divisible_by_3():
@@ -68,6 +71,7 @@ def divisible_by_3():
 Note: List comprehensions are super useful. They allow you to iterate through lists and generate new lists on the fly with very little code.
 
 4 - Write a function that takes a list of numbers and returns the max of those numbers, don't ues the max() function.
+
 Solution:
 ```python
 def get_max(numbers):
@@ -80,6 +84,7 @@ def get_max(numbers):
 Note: Here we just tested out our logic skills.
 
 5 - Use the max() function to achieve the same functionality
+
 Solution:
 ```python
 def get_max(numbers):
@@ -88,6 +93,7 @@ def get_max(numbers):
 Note: `max` is useful, as are `sorted` and `min`, some of which we'll use later on.
 
 6 - Write a function that returns True if a number is odd or divisble by 7 and False otherwise.
+
 Solution:
 ```python
 def is_odd_or_div_by_7(number):
@@ -96,6 +102,8 @@ def is_odd_or_div_by_7(number):
 
 7 - Use the function in #6 and list comprehensions to write a function that given a list of numbers returns a sublist of numbers
 that are odd or divisible by 7.
+
+Solution:
 ```python
 def get_sublist_of_numbers_odd_or_div_by_7(numbers):
     return [number for number in numbers if is_odd_or_div_by(number)]
@@ -111,6 +119,7 @@ Takes ["burger", "fries", "burger", "tenders", "apple pie"] and turns it into
    "tenders": 1,
    "apple pie": 1
 }
+
 Solution:
 ```python
 def aggregate_counts(order_list):
@@ -126,6 +135,7 @@ def aggregate_counts(order_list):
 ```
 
 9 - Use collections.Counter to achieve the same functionality.
+
 Solution:
 ```python
 from collections import Counter
@@ -136,6 +146,8 @@ def aggregate_counts(order_list):
 Note: Good lesson here is that Python has a ton of useful libraries, so don't reinvent the wheel.
 
 10 - Write a function that takes the same kind of input as in #9 but instead of returning a dictionary with the counts, it just returns a tuple: the dish that appears the most in the list and the number of times it appears in the list. So the output given the example would be ("burger", 2)
+
+Solution:
 ```python
 def get_most_popular_order_data(order_list):
     agg_counts = aggregate_counts(order_list)
@@ -168,6 +180,8 @@ $ python
 ```
 
 2 - How many songs are from 1981?
+
+Solution:
 ```
 >>> rows = [row for row in reader]
 >>> len([row for row in rows if row['Release Year'] == '1981'])
@@ -345,10 +359,8 @@ Who are the 10 most prolific artists?
 ```
 
 3 - How many songs contain the word 'Rock'/'rock'/'ROCK' in it?
-- Explain lambda functions!
-- Learn how to use DataFrame.apply
-```python
 
+```python
 # I can create a new column in the DataFrame the same way we add keys to dictionaries
 # Here I'm creating a column 'has rock in title' with True if rock is in the lowercase version of the title and False if not.
 >>> rock_data["has rock in title"] = rock_data['Song Clean'].apply(lambda title: "rock" in title.lower())
@@ -360,7 +372,9 @@ Who are the 10 most prolific artists?
 ```
 
 4 - What is the earliest release year in the data?
-- We need to clean the data. Let's use apply. Let's change any nonstring or below 1900 to n/a.
+
+We need to clean the data. Let's use apply. Let's change any nonstring or below 1900 to None, same as we did above.
+
 ```python
 >>> def is_number(year):
 ...     try:
@@ -390,27 +404,27 @@ Who are the 10 most prolific artists?
 >>> import pylab
 >>> pylab.show()
 ```
-## What We Learned
+## We Learned A Lot!
 
 ### Python
 - list comprehensions
-- list comprehensions with conditions
+- list comprehensions with conditional logic
 - sets
 - lambda functions
 - Counter
 
 
 ### Pandas
-- dataframes
-- series
-- .apply()
-- min()
+- DataFrames
+- Series
+- the .head() and .tail() functions
+- the .apply() function
+- the .min() function
 - string methods
-- filtering
-- compound filtering
-- slicing
-- adding new columns
-- selecting specific columns
-- plotting
+- filtering DataFrames
+- slicing DataFrames
+- adding new columns to DataFrames
+- selecting specific columns from DataFrames
+- plotting Series
 - cleaning data
-- value_counts
+- the .value_counts() function
