@@ -1,6 +1,6 @@
 # Class Info
 - teacher: Suneel Chakravorty, twitter: @suneelius
-- class chatroom: http://us19.chatzy.com/72537354013765
+- class chatroom: http://us21.chatzy.com/52738267727777
 - wifi: GA guest, password: yellowpencil
 
 # Python Warm Up and Diagnostic
@@ -23,17 +23,6 @@
 8. Use collections.Counter to achieve the same functionality.
 9. Write a function `get_most_popular_order_data` that takes a list of orders but instead of returning a dictionary with the counts, it just outputs a tuple: the dish that appears the most in the list and the number of times it appears in the list. So the output given the example would be ```("burger", 2)```
 
-# Now let's get ready for Data Science. Install Anacondas
-- Instructions for Mac: http://docs.continuum.io/anaconda/install.html#mac-install
-- Instructions for Windows: http://docs.continuum.io/anaconda/install.html#windows-install
-- Setting up your environment, using the `conda` command line tool:
-```bash
-conda create -n ga-python pandas matplotlib ipython
-source activate ga-python
-ipython -pylab
->>> import pandas
-```
-
 # Data Set Worksheet 1
 ## Objectives
 - use csv library to read in data
@@ -48,6 +37,17 @@ ipython -pylab
 6. Who are the top 10 most prolific artists in the data along with the number of their songs that appear in the data?
 7. How many different artists appear in the data?
 8. How songs does 'Rock' appear in the title of?
+
+# Now let's get ready for Data Science. Install Anacondas
+- Instructions for Mac: http://docs.continuum.io/anaconda/install.html#mac-install
+- Instructions for Windows: http://docs.continuum.io/anaconda/install.html#windows-install
+- Setting up your environment, using the `conda` command line tool:
+```bash
+conda create -n ga-python pandas matplotlib ipython
+source activate ga-python
+ipython -pylab
+>>> import pandas
+```
 
 # Pandas Methods and Concepts
 - read_csv
