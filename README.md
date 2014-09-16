@@ -29,7 +29,7 @@
 - use pure Python techniques to extract insights about the data
 - start getting acquainted with the Pandas library
 
-1. Using csv library, read in data from https://raw.githubusercontent.com/suneel0101/data/master/classic-rock/classic-rock-song-list.csv
+1. Using csv library, read in data from rock.csv, which you can download here: https://www.dropbox.com/s/cbffxkqq0ujru58/rock.csv?dl=0
 2. How many songs are from 1981?
 3. How many songs are from before 1984
 4. What is the earliest release year in the data? (HINT: You might have to account for/clean up dirty data)
