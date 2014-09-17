@@ -1,5 +1,6 @@
 # Class Info
 - teacher: Suneel Chakravorty, twitter: @suneelius
+- chakravorty@post.harvard.edu
 - class chatroom: http://us21.chatzy.com/52738267727777
 - wifi: GA guest, password: yellowpencil
 
