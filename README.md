@@ -1,7 +1,7 @@
 # Class Info
 - teacher: Suneel Chakravorty, twitter: @suneelius
 - chakravorty@post.harvard.edu
-- class chatroom: http://us21.chatzy.com/52738267727777
+- class chatroom: https://suneelius.hipchat.com/chat
 - wifi: GA guest, password: yellowpencil
 
 # Python Warm Up and Diagnostic
