@@ -1,3 +1,6 @@
+# Problem 1: create function that takes a list of movies and returns the one with the highest fb fan count
+# Problem 2: create function that takes a list of movies and returns the one with the highest imdb_score
+
 movies = [
     {
         "name": "Shawshank Redemption",
